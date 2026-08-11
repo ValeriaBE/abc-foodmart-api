@@ -62,8 +62,7 @@ def get_kpis(store_id=None):
                 JOIN sale_item si
                     ON s.sale_id = si.sale_id
 
-                WHERE (%s IS NULL OR s.store_id = %s);
-            """, (store_id, store_id))
+            """)
 
             sales = cur.fetchone()
 
@@ -72,8 +71,7 @@ def get_kpis(store_id=None):
                 SELECT COUNT(*) AS low_stock_products
                 FROM store_inventory
                 WHERE quantity_on_hand <= reorder_level
-                  AND (%s IS NULL OR store_id = %s);
-            """, (store_id, store_id))
+            """)
 
             inventory = cur.fetchone()
 
@@ -82,8 +80,7 @@ def get_kpis(store_id=None):
                 SELECT COUNT(DISTINCT s.customer_id) AS active_customers
                 FROM sale s
                 WHERE s.customer_id IS NOT NULL
-                  AND (%s IS NULL OR s.store_id = %s);
-            """, (store_id, store_id))
+            """)
 
             customers = cur.fetchone()
 
@@ -151,13 +148,11 @@ def get_monthly_sales(store_id=None):
                 JOIN sale_item si
                     ON s.sale_id = si.sale_id
 
-                WHERE (%s IS NULL OR s.store_id = %s)
-
                 GROUP BY
                     DATE_TRUNC('month', s.sale_datetime)
 
                 ORDER BY month;
-            """, (store_id, store_id))
+            """)
 
             return cur.fetchall()
 
@@ -188,14 +183,12 @@ def get_category_sales(store_id=None):
                 JOIN product_category pc
                     ON p.category_id = pc.category_id
 
-                WHERE (%s IS NULL OR s.store_id = %s)
-
                 GROUP BY
                     pc.category_id,
                     pc.category_name
 
                 ORDER BY revenue DESC;
-            """, (store_id, store_id))
+            """)
 
             return cur.fetchall()
 
@@ -224,8 +217,6 @@ def get_top_products(store_id=None, limit=10):
                 JOIN product p
                     ON si.product_id = p.product_id
 
-                WHERE (%s IS NULL OR s.store_id = %s)
-
                 GROUP BY
                     p.product_id,
                     p.product_name,
@@ -234,7 +225,7 @@ def get_top_products(store_id=None, limit=10):
                 ORDER BY units_sold DESC
 
                 LIMIT %s;
-            """, (store_id, store_id, limit))
+            """, (limit,))
 
             return cur.fetchall()
 
@@ -267,13 +258,12 @@ def get_low_stock(store_id=None):
                     ON si.product_id = p.product_id
 
                 WHERE si.quantity_on_hand <= si.reorder_level
-                  AND (%s IS NULL OR si.store_id = %s)
 
                 ORDER BY
                     units_below_reorder DESC,
                     st.store_name,
                     p.product_name;
-            """, (store_id, store_id))
+            """)
 
             return cur.fetchall()
 
