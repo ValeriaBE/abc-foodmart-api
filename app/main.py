@@ -15,8 +15,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
-        # Add your GitHub Pages URL later:
-        # "https://YOUR_USERNAME.github.io",
+        "https://valeriabe.github.io/"
     ],
     allow_credentials=False,
     allow_methods=["GET"],
