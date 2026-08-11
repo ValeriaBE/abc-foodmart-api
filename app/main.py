@@ -17,8 +17,8 @@ app.add_middleware(
         "http://localhost:5173",
         "https://valeriabe.github.io/"
     ],
-    allow_credentials=False,
-    allow_methods=["GET"],
+    allow_credentials=True,
+    allow_methods=["*"],
     allow_headers=["*"],
 )
 
