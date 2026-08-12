@@ -1,0 +1,95 @@
+employee_id,store_id,department_id,first_name,last_name,job_title,hire_date,hourly_rate,employment_status
+1,1,7,Employee1,Last1,Supervisor,2023-01-01,18.09,Active
+2,1,6,Employee2,Last2,Stock Associate,2023-01-01,30.06,Active
+3,1,7,Employee3,Last3,Cashier,2023-01-01,25.81,Active
+4,1,5,Employee4,Last4,Supervisor,2023-01-01,25.77,Active
+5,1,7,Employee5,Last5,Stock Associate,2023-01-01,28.7,Active
+6,1,7,Employee6,Last6,Cashier,2023-01-01,31.45,Active
+7,1,3,Employee7,Last7,Associate,2023-01-01,32.51,Active
+8,1,1,Employee8,Last8,Associate,2023-01-01,28.28,Active
+9,1,3,Employee9,Last9,Supervisor,2023-01-01,20.91,Active
+10,1,5,Employee10,Last10,Supervisor,2023-01-01,23.24,Active
+11,1,8,Employee11,Last11,Stock Associate,2023-01-01,23.4,Active
+12,1,7,Employee12,Last12,Stock Associate,2023-01-01,30.03,Active
+13,1,7,Employee13,Last13,Stock Associate,2023-01-01,31.36,Active
+14,1,8,Employee14,Last14,Associate,2023-01-01,29.98,Active
+15,1,1,Employee15,Last15,Stock Associate,2023-01-01,21.59,Active
+16,1,2,Employee16,Last16,Associate,2023-01-01,30.07,Active
+17,1,4,Employee17,Last17,Cashier,2023-01-01,31.43,Active
+18,1,3,Employee18,Last18,Cashier,2023-01-01,20.02,Active
+19,1,2,Employee19,Last19,Cashier,2023-01-01,25.44,Active
+20,1,5,Employee20,Last20,Stock Associate,2023-01-01,20.68,Active
+21,1,2,Employee21,Last21,Cashier,2023-01-01,33.44,Active
+22,1,2,Employee22,Last22,Associate,2023-01-01,32.86,Active
+23,2,7,Employee23,Last23,Supervisor,2023-01-01,33.06,Active
+24,2,4,Employee24,Last24,Associate,2023-01-01,27.47,Active
+25,2,4,Employee25,Last25,Associate,2023-01-01,29.16,Active
+26,2,5,Employee26,Last26,Associate,2023-01-01,30.74,Active
+27,2,1,Employee27,Last27,Stock Associate,2023-01-01,26.52,Active
+28,2,6,Employee28,Last28,Associate,2023-01-01,26.1,Active
+29,2,6,Employee29,Last29,Associate,2023-01-01,31.59,Active
+30,2,8,Employee30,Last30,Associate,2023-01-01,24.94,Active
+31,2,6,Employee31,Last31,Supervisor,2023-01-01,29.32,Active
+32,2,7,Employee32,Last32,Cashier,2023-01-01,29.74,Active
+33,2,5,Employee33,Last33,Supervisor,2023-01-01,25.44,Active
+34,2,5,Employee34,Last34,Stock Associate,2023-01-01,31.63,Active
+35,2,2,Employee35,Last35,Stock Associate,2023-01-01,32.11,Active
+36,2,4,Employee36,Last36,Supervisor,2023-01-01,27.12,Active
+37,2,7,Employee37,Last37,Stock Associate,2023-01-01,18.46,Active
+38,2,6,Employee38,Last38,Cashier,2023-01-01,25.8,Active
+39,2,6,Employee39,Last39,Stock Associate,2023-01-01,23.45,Active
+40,2,5,Employee40,Last40,Associate,2023-01-01,26.27,Active
+41,2,4,Employee41,Last41,Associate,2023-01-01,21.86,Active
+42,2,7,Employee42,Last42,Supervisor,2023-01-01,26.88,Active
+43,2,4,Employee43,Last43,Supervisor,2023-01-01,28.33,Active
+44,2,8,Employee44,Last44,Supervisor,2023-01-01,30.69,Active
+45,3,2,Employee45,Last45,Stock Associate,2023-01-01,21.55,Active
+46,3,4,Employee46,Last46,Stock Associate,2023-01-01,28.62,Active
+47,3,6,Employee47,Last47,Supervisor,2023-01-01,26.86,Active
+48,3,6,Employee48,Last48,Supervisor,2023-01-01,33.95,Active
+49,3,6,Employee49,Last49,Stock Associate,2023-01-01,29.25,Active
+50,3,5,Employee50,Last50,Stock Associate,2023-01-01,22.02,Active
+51,3,2,Employee51,Last51,Cashier,2023-01-01,23.05,Active
+52,3,3,Employee52,Last52,Cashier,2023-01-01,21.46,Active
+53,3,8,Employee53,Last53,Stock Associate,2023-01-01,29.59,Active
+54,3,5,Employee54,Last54,Associate,2023-01-01,31.32,Active
+55,3,5,Employee55,Last55,Cashier,2023-01-01,23.77,Active
+56,3,5,Employee56,Last56,Associate,2023-01-01,29.33,Active
+57,3,3,Employee57,Last57,Stock Associate,2023-01-01,18.73,Active
+58,3,1,Employee58,Last58,Stock Associate,2023-01-01,29.16,Active
+59,3,3,Employee59,Last59,Supervisor,2023-01-01,19.64,Active
+60,3,1,Employee60,Last60,Stock Associate,2023-01-01,25.51,Active
+61,3,8,Employee61,Last61,Stock Associate,2023-01-01,20.95,Active
+62,3,1,Employee62,Last62,Stock Associate,2023-01-01,33.06,Active
+63,4,8,Employee63,Last63,Associate,2023-01-01,31.15,Active
+64,4,7,Employee64,Last64,Supervisor,2023-01-01,19.19,Active
+65,4,1,Employee65,Last65,Cashier,2023-01-01,20.39,Active
+66,4,5,Employee66,Last66,Associate,2023-01-01,33.9,Active
+67,4,2,Employee67,Last67,Supervisor,2023-01-01,27.7,Active
+68,4,4,Employee68,Last68,Supervisor,2023-01-01,25.21,Active
+69,4,8,Employee69,Last69,Stock Associate,2023-01-01,31.76,Active
+70,4,7,Employee70,Last70,Stock Associate,2023-01-01,27.1,Active
+71,4,1,Employee71,Last71,Associate,2023-01-01,33.16,Active
+72,4,4,Employee72,Last72,Cashier,2023-01-01,22.23,Active
+73,4,2,Employee73,Last73,Cashier,2023-01-01,21.84,Active
+74,4,2,Employee74,Last74,Cashier,2023-01-01,18.04,Active
+75,4,8,Employee75,Last75,Supervisor,2023-01-01,22.66,Active
+76,4,4,Employee76,Last76,Stock Associate,2023-01-01,29.31,Active
+77,4,8,Employee77,Last77,Associate,2023-01-01,29.0,Active
+78,4,5,Employee78,Last78,Cashier,2023-01-01,24.8,Active
+79,5,4,Employee79,Last79,Cashier,2023-01-01,32.53,Active
+80,5,3,Employee80,Last80,Associate,2023-01-01,18.95,Active
+81,5,5,Employee81,Last81,Stock Associate,2023-01-01,25.03,Active
+82,5,8,Employee82,Last82,Stock Associate,2023-01-01,29.2,Active
+83,5,5,Employee83,Last83,Supervisor,2023-01-01,25.0,Active
+84,5,1,Employee84,Last84,Supervisor,2023-01-01,29.75,Active
+85,5,5,Employee85,Last85,Associate,2023-01-01,19.46,Active
+86,5,1,Employee86,Last86,Stock Associate,2023-01-01,27.22,Active
+87,5,3,Employee87,Last87,Supervisor,2023-01-01,26.3,Active
+88,5,8,Employee88,Last88,Stock Associate,2023-01-01,20.9,Active
+89,5,7,Employee89,Last89,Supervisor,2023-01-01,33.5,Active
+90,5,8,Employee90,Last90,Stock Associate,2023-01-01,24.53,Active
+91,5,6,Employee91,Last91,Associate,2023-01-01,31.72,Active
+92,5,6,Employee92,Last92,Supervisor,2023-01-01,29.1,Active
+93,5,5,Employee93,Last93,Supervisor,2023-01-01,31.02,Active
+94,5,1,Employee94,Last94,Supervisor,2023-01-01,19.41,Active

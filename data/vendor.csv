@@ -1,0 +1,11 @@
+vendor_id,vendor_name,contact_name,phone,email,street_address,city,state,zip_code,vendor_status
+1,Queens Fresh Produce,Representative 1,718-555-2001,vendor1@abcfoodmart.com,101 Commerce Ave,New York,NY,10001,Active
+2,Empire Dairy,Representative 2,718-555-2002,vendor2@abcfoodmart.com,102 Commerce Ave,New York,NY,10001,Active
+3,Metro Wholesale Foods,Representative 3,718-555-2003,vendor3@abcfoodmart.com,103 Commerce Ave,New York,NY,10001,Active
+4,Brooklyn Bakery Supply,Representative 4,718-555-2004,vendor4@abcfoodmart.com,104 Commerce Ave,New York,NY,10001,Active
+5,Atlantic Beverage,Representative 5,718-555-2005,vendor5@abcfoodmart.com,105 Commerce Ave,New York,NY,10001,Active
+6,Fresh Farms NY,Representative 6,718-555-2006,vendor6@abcfoodmart.com,106 Commerce Ave,New York,NY,10001,Active
+7,Northeast Grocery Distribution,Representative 7,718-555-2007,vendor7@abcfoodmart.com,107 Commerce Ave,New York,NY,10001,Active
+8,Green Valley Organics,Representative 8,718-555-2008,vendor8@abcfoodmart.com,108 Commerce Ave,New York,NY,10001,Active
+9,City Household Supply,Representative 9,718-555-2009,vendor9@abcfoodmart.com,109 Commerce Ave,New York,NY,10001,Active
+10,Prime Pantry Distribution,Representative 10,718-555-2010,vendor10@abcfoodmart.com,110 Commerce Ave,New York,NY,10001,Active

@@ -1,0 +1,251 @@
+product_id,category_id,product_name,brand,unit_size,selling_price,discontinued_status
+1,1,Organic Bananas 1,Brand 2,1 unit,11.87,False
+2,1,Honeycrisp Apples 2,Brand 3,1 unit,11.3,False
+3,2,Whole Milk 3,Brand 4,1 unit,16.72,False
+4,2,Greek Yogurt 4,Brand 5,1 unit,8.66,False
+5,2,Large Eggs 5,Brand 6,1 unit,11.32,False
+6,3,Sourdough Bread 6,Brand 7,1 unit,24.22,False
+7,3,Bagels 7,Brand 8,1 unit,5.95,False
+8,4,Chicken Breast 8,Brand 9,1 unit,23.8,False
+9,4,Ground Beef 9,Brand 10,1 unit,12.58,False
+10,5,Frozen Pizza 10,Brand 11,1 unit,17.86,False
+11,5,Ice Cream 11,Brand 12,1 unit,10.32,False
+12,6,Orange Juice 12,Brand 13,1 unit,12.04,False
+13,6,Sparkling Water 13,Brand 14,1 unit,4.43,False
+14,7,Potato Chips 14,Brand 15,1 unit,12.02,False
+15,7,Chocolate Cookies 15,Brand 1,1 unit,11.21,False
+16,8,Paper Towels 16,Brand 2,1 unit,3.81,False
+17,8,Dish Soap 17,Brand 3,1 unit,22.02,False
+18,9,Toothpaste 18,Brand 4,1 unit,19.15,False
+19,9,Shampoo 19,Brand 5,1 unit,7.1,False
+20,10,Long Grain Rice 20,Brand 6,1 unit,19.92,False
+21,10,Pasta 21,Brand 7,1 unit,3.76,False
+22,10,Coffee 22,Brand 8,1 unit,16.56,False
+23,1,Organic Bananas 23,Brand 9,1 unit,14.2,False
+24,1,Honeycrisp Apples 24,Brand 10,1 unit,6.46,False
+25,2,Whole Milk 25,Brand 11,1 unit,19.85,False
+26,2,Greek Yogurt 26,Brand 12,1 unit,10.08,False
+27,2,Large Eggs 27,Brand 13,1 unit,24.04,False
+28,3,Sourdough Bread 28,Brand 14,1 unit,16.85,False
+29,3,Bagels 29,Brand 15,1 unit,5.4,False
+30,4,Chicken Breast 30,Brand 1,1 unit,4.36,False
+31,4,Ground Beef 31,Brand 2,1 unit,7.89,False
+32,5,Frozen Pizza 32,Brand 3,1 unit,5.99,False
+33,5,Ice Cream 33,Brand 4,1 unit,5.52,False
+34,6,Orange Juice 34,Brand 5,1 unit,19.46,False
+35,6,Sparkling Water 35,Brand 6,1 unit,3.73,False
+36,7,Potato Chips 36,Brand 7,1 unit,23.88,False
+37,7,Chocolate Cookies 37,Brand 8,1 unit,16.44,False
+38,8,Paper Towels 38,Brand 9,1 unit,12.67,False
+39,8,Dish Soap 39,Brand 10,1 unit,14.97,False
+40,9,Toothpaste 40,Brand 11,1 unit,15.33,False
+41,9,Shampoo 41,Brand 12,1 unit,17.67,False
+42,10,Long Grain Rice 42,Brand 13,1 unit,22.29,False
+43,10,Pasta 43,Brand 14,1 unit,16.79,False
+44,10,Coffee 44,Brand 15,1 unit,24.69,False
+45,1,Organic Bananas 45,Brand 1,1 unit,9.43,False
+46,1,Honeycrisp Apples 46,Brand 2,1 unit,24.33,False
+47,2,Whole Milk 47,Brand 3,1 unit,9.27,False
+48,2,Greek Yogurt 48,Brand 4,1 unit,12.11,False
+49,2,Large Eggs 49,Brand 5,1 unit,12.79,False
+50,3,Sourdough Bread 50,Brand 6,1 unit,16.52,False
+51,3,Bagels 51,Brand 7,1 unit,20.32,False
+52,4,Chicken Breast 52,Brand 8,1 unit,15.6,False
+53,4,Ground Beef 53,Brand 9,1 unit,10.09,False
+54,5,Frozen Pizza 54,Brand 10,1 unit,3.71,False
+55,5,Ice Cream 55,Brand 11,1 unit,12.62,False
+56,6,Orange Juice 56,Brand 12,1 unit,2.86,False
+57,6,Sparkling Water 57,Brand 13,1 unit,10.48,False
+58,7,Potato Chips 58,Brand 14,1 unit,8.6,False
+59,7,Chocolate Cookies 59,Brand 15,1 unit,16.83,False
+60,8,Paper Towels 60,Brand 1,1 unit,24.48,False
+61,8,Dish Soap 61,Brand 2,1 unit,4.08,False
+62,9,Toothpaste 62,Brand 3,1 unit,15.66,False
+63,9,Shampoo 63,Brand 4,1 unit,10.84,False
+64,10,Long Grain Rice 64,Brand 5,1 unit,15.35,False
+65,10,Pasta 65,Brand 6,1 unit,23.95,False
+66,10,Coffee 66,Brand 7,1 unit,19.0,False
+67,1,Organic Bananas 67,Brand 8,1 unit,2.94,False
+68,1,Honeycrisp Apples 68,Brand 9,1 unit,22.91,False
+69,2,Whole Milk 69,Brand 10,1 unit,15.15,False
+70,2,Greek Yogurt 70,Brand 11,1 unit,6.33,False
+71,2,Large Eggs 71,Brand 12,1 unit,15.92,False
+72,3,Sourdough Bread 72,Brand 13,1 unit,13.53,False
+73,3,Bagels 73,Brand 14,1 unit,24.03,False
+74,4,Chicken Breast 74,Brand 15,1 unit,12.36,False
+75,4,Ground Beef 75,Brand 1,1 unit,20.65,False
+76,5,Frozen Pizza 76,Brand 2,1 unit,21.26,False
+77,5,Ice Cream 77,Brand 3,1 unit,24.59,False
+78,6,Orange Juice 78,Brand 4,1 unit,3.94,False
+79,6,Sparkling Water 79,Brand 5,1 unit,16.86,False
+80,7,Potato Chips 80,Brand 6,1 unit,2.9,False
+81,7,Chocolate Cookies 81,Brand 7,1 unit,18.28,False
+82,8,Paper Towels 82,Brand 8,1 unit,24.79,False
+83,8,Dish Soap 83,Brand 9,1 unit,14.05,False
+84,9,Toothpaste 84,Brand 10,1 unit,16.03,False
+85,9,Shampoo 85,Brand 11,1 unit,10.37,False
+86,10,Long Grain Rice 86,Brand 12,1 unit,23.11,False
+87,10,Pasta 87,Brand 13,1 unit,10.91,False
+88,10,Coffee 88,Brand 14,1 unit,19.81,False
+89,1,Organic Bananas 89,Brand 15,1 unit,17.61,False
+90,1,Honeycrisp Apples 90,Brand 1,1 unit,3.2,False
+91,2,Whole Milk 91,Brand 2,1 unit,16.51,False
+92,2,Greek Yogurt 92,Brand 3,1 unit,9.7,False
+93,2,Large Eggs 93,Brand 4,1 unit,9.58,False
+94,3,Sourdough Bread 94,Brand 5,1 unit,14.83,False
+95,3,Bagels 95,Brand 6,1 unit,10.89,False
+96,4,Chicken Breast 96,Brand 7,1 unit,7.8,False
+97,4,Ground Beef 97,Brand 8,1 unit,21.59,False
+98,5,Frozen Pizza 98,Brand 9,1 unit,24.18,False
+99,5,Ice Cream 99,Brand 10,1 unit,15.86,False
+100,6,Orange Juice 100,Brand 11,1 unit,5.46,False
+101,6,Sparkling Water 101,Brand 12,1 unit,3.87,False
+102,7,Potato Chips 102,Brand 13,1 unit,17.26,False
+103,7,Chocolate Cookies 103,Brand 14,1 unit,23.09,False
+104,8,Paper Towels 104,Brand 15,1 unit,9.14,False
+105,8,Dish Soap 105,Brand 1,1 unit,17.09,False
+106,9,Toothpaste 106,Brand 2,1 unit,17.23,False
+107,9,Shampoo 107,Brand 3,1 unit,4.97,False
+108,10,Long Grain Rice 108,Brand 4,1 unit,18.3,False
+109,10,Pasta 109,Brand 5,1 unit,3.95,False
+110,10,Coffee 110,Brand 6,1 unit,14.86,False
+111,1,Organic Bananas 111,Brand 7,1 unit,16.8,False
+112,1,Honeycrisp Apples 112,Brand 8,1 unit,9.55,False
+113,2,Whole Milk 113,Brand 9,1 unit,4.94,False
+114,2,Greek Yogurt 114,Brand 10,1 unit,18.17,False
+115,2,Large Eggs 115,Brand 11,1 unit,23.78,False
+116,3,Sourdough Bread 116,Brand 12,1 unit,24.93,False
+117,3,Bagels 117,Brand 13,1 unit,22.99,False
+118,4,Chicken Breast 118,Brand 14,1 unit,4.15,False
+119,4,Ground Beef 119,Brand 15,1 unit,17.42,False
+120,5,Frozen Pizza 120,Brand 1,1 unit,13.7,False
+121,5,Ice Cream 121,Brand 2,1 unit,2.42,False
+122,6,Orange Juice 122,Brand 3,1 unit,9.1,False
+123,6,Sparkling Water 123,Brand 4,1 unit,23.88,False
+124,7,Potato Chips 124,Brand 5,1 unit,9.86,False
+125,7,Chocolate Cookies 125,Brand 6,1 unit,19.62,False
+126,8,Paper Towels 126,Brand 7,1 unit,6.42,False
+127,8,Dish Soap 127,Brand 8,1 unit,25.0,False
+128,9,Toothpaste 128,Brand 9,1 unit,5.56,False
+129,9,Shampoo 129,Brand 10,1 unit,8.8,False
+130,10,Long Grain Rice 130,Brand 11,1 unit,20.13,False
+131,10,Pasta 131,Brand 12,1 unit,13.68,False
+132,10,Coffee 132,Brand 13,1 unit,14.41,False
+133,1,Organic Bananas 133,Brand 14,1 unit,18.99,False
+134,1,Honeycrisp Apples 134,Brand 15,1 unit,14.11,False
+135,2,Whole Milk 135,Brand 1,1 unit,17.22,False
+136,2,Greek Yogurt 136,Brand 2,1 unit,22.16,False
+137,2,Large Eggs 137,Brand 3,1 unit,16.21,False
+138,3,Sourdough Bread 138,Brand 4,1 unit,15.74,False
+139,3,Bagels 139,Brand 5,1 unit,5.55,False
+140,4,Chicken Breast 140,Brand 6,1 unit,6.16,False
+141,4,Ground Beef 141,Brand 7,1 unit,17.94,False
+142,5,Frozen Pizza 142,Brand 8,1 unit,16.37,False
+143,5,Ice Cream 143,Brand 9,1 unit,22.76,False
+144,6,Orange Juice 144,Brand 10,1 unit,18.59,False
+145,6,Sparkling Water 145,Brand 11,1 unit,3.0,False
+146,7,Potato Chips 146,Brand 12,1 unit,10.38,False
+147,7,Chocolate Cookies 147,Brand 13,1 unit,18.55,False
+148,8,Paper Towels 148,Brand 14,1 unit,24.3,False
+149,8,Dish Soap 149,Brand 15,1 unit,16.04,False
+150,9,Toothpaste 150,Brand 1,1 unit,19.3,False
+151,9,Shampoo 151,Brand 2,1 unit,20.03,False
+152,10,Long Grain Rice 152,Brand 3,1 unit,7.38,False
+153,10,Pasta 153,Brand 4,1 unit,7.5,False
+154,10,Coffee 154,Brand 5,1 unit,24.21,False
+155,1,Organic Bananas 155,Brand 6,1 unit,20.04,False
+156,1,Honeycrisp Apples 156,Brand 7,1 unit,22.79,False
+157,2,Whole Milk 157,Brand 8,1 unit,6.46,False
+158,2,Greek Yogurt 158,Brand 9,1 unit,17.6,False
+159,2,Large Eggs 159,Brand 10,1 unit,15.12,False
+160,3,Sourdough Bread 160,Brand 11,1 unit,12.13,False
+161,3,Bagels 161,Brand 12,1 unit,19.7,False
+162,4,Chicken Breast 162,Brand 13,1 unit,19.9,False
+163,4,Ground Beef 163,Brand 14,1 unit,13.57,False
+164,5,Frozen Pizza 164,Brand 15,1 unit,11.63,False
+165,5,Ice Cream 165,Brand 1,1 unit,5.73,False
+166,6,Orange Juice 166,Brand 2,1 unit,6.59,False
+167,6,Sparkling Water 167,Brand 3,1 unit,15.91,False
+168,7,Potato Chips 168,Brand 4,1 unit,22.08,False
+169,7,Chocolate Cookies 169,Brand 5,1 unit,3.2,False
+170,8,Paper Towels 170,Brand 6,1 unit,13.05,False
+171,8,Dish Soap 171,Brand 7,1 unit,10.54,False
+172,9,Toothpaste 172,Brand 8,1 unit,23.49,False
+173,9,Shampoo 173,Brand 9,1 unit,18.36,False
+174,10,Long Grain Rice 174,Brand 10,1 unit,13.87,False
+175,10,Pasta 175,Brand 11,1 unit,4.87,False
+176,10,Coffee 176,Brand 12,1 unit,3.93,False
+177,1,Organic Bananas 177,Brand 13,1 unit,5.69,False
+178,1,Honeycrisp Apples 178,Brand 14,1 unit,12.33,False
+179,2,Whole Milk 179,Brand 15,1 unit,13.81,False
+180,2,Greek Yogurt 180,Brand 1,1 unit,21.11,False
+181,2,Large Eggs 181,Brand 2,1 unit,4.11,False
+182,3,Sourdough Bread 182,Brand 3,1 unit,22.94,False
+183,3,Bagels 183,Brand 4,1 unit,20.78,False
+184,4,Chicken Breast 184,Brand 5,1 unit,22.35,False
+185,4,Ground Beef 185,Brand 6,1 unit,23.4,False
+186,5,Frozen Pizza 186,Brand 7,1 unit,11.54,False
+187,5,Ice Cream 187,Brand 8,1 unit,11.12,False
+188,6,Orange Juice 188,Brand 9,1 unit,10.6,False
+189,6,Sparkling Water 189,Brand 10,1 unit,10.88,False
+190,7,Potato Chips 190,Brand 11,1 unit,3.88,False
+191,7,Chocolate Cookies 191,Brand 12,1 unit,7.16,False
+192,8,Paper Towels 192,Brand 13,1 unit,9.33,False
+193,8,Dish Soap 193,Brand 14,1 unit,4.28,False
+194,9,Toothpaste 194,Brand 15,1 unit,18.44,False
+195,9,Shampoo 195,Brand 1,1 unit,9.71,False
+196,10,Long Grain Rice 196,Brand 2,1 unit,5.36,False
+197,10,Pasta 197,Brand 3,1 unit,2.88,False
+198,10,Coffee 198,Brand 4,1 unit,23.1,False
+199,1,Organic Bananas 199,Brand 5,1 unit,12.87,False
+200,1,Honeycrisp Apples 200,Brand 6,1 unit,21.12,False
+201,2,Whole Milk 201,Brand 7,1 unit,19.45,False
+202,2,Greek Yogurt 202,Brand 8,1 unit,12.79,False
+203,2,Large Eggs 203,Brand 9,1 unit,16.15,False
+204,3,Sourdough Bread 204,Brand 10,1 unit,22.83,False
+205,3,Bagels 205,Brand 11,1 unit,2.44,False
+206,4,Chicken Breast 206,Brand 12,1 unit,6.96,False
+207,4,Ground Beef 207,Brand 13,1 unit,5.44,False
+208,5,Frozen Pizza 208,Brand 14,1 unit,23.63,False
+209,5,Ice Cream 209,Brand 15,1 unit,16.0,False
+210,6,Orange Juice 210,Brand 1,1 unit,11.73,False
+211,6,Sparkling Water 211,Brand 2,1 unit,19.85,False
+212,7,Potato Chips 212,Brand 3,1 unit,7.47,False
+213,7,Chocolate Cookies 213,Brand 4,1 unit,4.8,False
+214,8,Paper Towels 214,Brand 5,1 unit,7.48,False
+215,8,Dish Soap 215,Brand 6,1 unit,16.7,False
+216,9,Toothpaste 216,Brand 7,1 unit,16.32,False
+217,9,Shampoo 217,Brand 8,1 unit,3.44,False
+218,10,Long Grain Rice 218,Brand 9,1 unit,21.24,False
+219,10,Pasta 219,Brand 10,1 unit,13.5,False
+220,10,Coffee 220,Brand 11,1 unit,14.33,False
+221,1,Organic Bananas 221,Brand 12,1 unit,16.53,False
+222,1,Honeycrisp Apples 222,Brand 13,1 unit,15.23,False
+223,2,Whole Milk 223,Brand 14,1 unit,18.53,False
+224,2,Greek Yogurt 224,Brand 15,1 unit,8.7,False
+225,2,Large Eggs 225,Brand 1,1 unit,2.04,False
+226,3,Sourdough Bread 226,Brand 2,1 unit,10.11,False
+227,3,Bagels 227,Brand 3,1 unit,15.13,False
+228,4,Chicken Breast 228,Brand 4,1 unit,6.31,False
+229,4,Ground Beef 229,Brand 5,1 unit,17.37,False
+230,5,Frozen Pizza 230,Brand 6,1 unit,14.04,False
+231,5,Ice Cream 231,Brand 7,1 unit,10.29,False
+232,6,Orange Juice 232,Brand 8,1 unit,23.93,False
+233,6,Sparkling Water 233,Brand 9,1 unit,14.51,False
+234,7,Potato Chips 234,Brand 10,1 unit,20.09,False
+235,7,Chocolate Cookies 235,Brand 11,1 unit,13.68,False
+236,8,Paper Towels 236,Brand 12,1 unit,2.47,False
+237,8,Dish Soap 237,Brand 13,1 unit,22.09,False
+238,9,Toothpaste 238,Brand 14,1 unit,3.0,False
+239,9,Shampoo 239,Brand 15,1 unit,10.9,False
+240,10,Long Grain Rice 240,Brand 1,1 unit,10.59,False
+241,10,Pasta 241,Brand 2,1 unit,19.19,False
+242,10,Coffee 242,Brand 3,1 unit,10.21,False
+243,1,Organic Bananas 243,Brand 4,1 unit,3.55,False
+244,1,Honeycrisp Apples 244,Brand 5,1 unit,7.55,False
+245,2,Whole Milk 245,Brand 6,1 unit,17.11,False
+246,2,Greek Yogurt 246,Brand 7,1 unit,4.38,False
+247,2,Large Eggs 247,Brand 8,1 unit,15.38,False
+248,3,Sourdough Bread 248,Brand 9,1 unit,19.4,False
+249,3,Bagels 249,Brand 10,1 unit,5.07,False
+250,4,Chicken Breast 250,Brand 11,1 unit,10.1,False

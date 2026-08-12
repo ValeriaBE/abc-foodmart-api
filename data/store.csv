@@ -1,0 +1,6 @@
+store_id,store_name,street_address,city,state,zip_code,phone,opening_date,operating_status
+1,Astoria Market,31-01 Steinway St,Queens,NY,11103,718-555-1001,2020-01-01,Open
+2,Flushing Market,136-20 Roosevelt Ave,Queens,NY,11354,718-555-1002,2020-03-01,Open
+3,Bayside Market,212-15 Northern Blvd,Queens,NY,11361,718-555-1003,2021-02-01,Open
+4,Williamsburg Market,249 Bedford Ave,Brooklyn,NY,11211,718-555-1004,2025-01-15,Open
+5,Park Slope Market,350 5th Ave,Brooklyn,NY,11215,718-555-1005,2025-03-01,Open
