@@ -246,6 +246,17 @@ Core entities include:
 
 ---
 
+## Documentation
+
+Project documentation is available in the `docs/` folder.
+
+- **ERD.pdf** – Complete Entity Relationship Diagram
+- **schema.sql** – SQL schema containing all CREATE TABLE statements
+
+The database consists of 17 normalized tables in Third Normal Form (3NF), connected through primary and foreign key relationships.
+
+---
+
 ## Deployment
 
 Backend deployed on:
