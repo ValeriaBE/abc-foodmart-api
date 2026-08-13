@@ -1,6 +1,7 @@
 from app.database import get_connection
 
 
+# Returns basic metadata about the connected PostgreSQL database and the public tables.
 def get_database_connection_info():
     with get_connection() as conn:
         with conn.cursor() as cur:
@@ -41,9 +42,11 @@ def get_database_connection_info():
     }
 
 
+# Summarizes a quick health snapshot for the dashboard, including table count and row estimate.
 def get_database_status():
     with get_connection() as conn:
         with conn.cursor() as cur:
+            # Count all user tables in the public schema.
             cur.execute("""
                 SELECT COUNT(*) AS table_count
                 FROM information_schema.tables
@@ -52,6 +55,7 @@ def get_database_status():
             """)
             table_count = cur.fetchone()["table_count"]
 
+            # Estimate row totals using PostgreSQL system catalogs for a quick dashboard summary.
             cur.execute("""
                 SELECT COALESCE(SUM(c.reltuples), 0)::BIGINT AS rows
                 FROM pg_class c
@@ -72,11 +76,12 @@ def get_database_status():
             }
 
 
+# Core performance summary metrics used by the dashboard cards.
 def get_kpis(store_id=None):
     with get_connection() as conn:
         with conn.cursor() as cur:
 
-            # Revenue + transaction count
+            # Revenue and total number of sales transactions.
             query = """
                 SELECT
                     COALESCE(
@@ -101,7 +106,7 @@ def get_kpis(store_id=None):
             cur.execute(query, params)
             sales = cur.fetchone()
 
-            # Low stock
+            # Count products that have fallen to or below their reorder level.
             query = """
                 SELECT COUNT(*) AS low_stock_products
                 FROM store_inventory
@@ -117,7 +122,7 @@ def get_kpis(store_id=None):
             cur.execute(query, params)
             inventory = cur.fetchone()
 
-            # Active customers
+            # Count distinct customers with at least one recorded sale.
             query = """
                 SELECT COUNT(DISTINCT customer_id) AS active_customers
                 FROM sale
@@ -141,10 +146,12 @@ def get_kpis(store_id=None):
     }
 
 
+# Aggregate revenue by store for comparison across locations.
 def get_revenue_by_store(store_id=None):
     with get_connection() as conn:
         with conn.cursor() as cur:
 
+            # Include all stores, even if they have no sales, using LEFT JOINs.
             query = """
                 SELECT
                     st.store_id,
@@ -180,10 +187,12 @@ def get_revenue_by_store(store_id=None):
             return cur.fetchall()
 
 
+# Trendline for monthly revenue over time.
 def get_monthly_sales(store_id=None):
     with get_connection() as conn:
         with conn.cursor() as cur:
 
+            # Bucket revenue by month using a date truncation.
             query = """
                 SELECT
                     DATE_TRUNC('month', s.sale_datetime) AS month,
@@ -211,10 +220,12 @@ def get_monthly_sales(store_id=None):
             return cur.fetchall()
 
 
+# Break down revenue by product category for merchandising insights.
 def get_category_sales(store_id=None):
     with get_connection() as conn:
         with conn.cursor() as cur:
 
+            # Join sales to products and categories so total revenue can be grouped by category.
             query = """
                 SELECT
                     pc.category_name,
@@ -249,10 +260,12 @@ def get_category_sales(store_id=None):
             return cur.fetchall()
 
 
+# List the top-selling products by unit volume and revenue.
 def get_top_products(store_id=None, limit=10):
     with get_connection() as conn:
         with conn.cursor() as cur:
 
+            # Return the best-performing products sorted by units sold, capped by a limit.
             query = """
                 SELECT
                     p.product_id,
@@ -291,10 +304,12 @@ def get_top_products(store_id=None, limit=10):
             return cur.fetchall()
 
 
+# Show products that need replenishment based on reorder thresholds.
 def get_low_stock(store_id=None):
     with get_connection() as conn:
         with conn.cursor() as cur:
 
+            # Flag inventory entries where on-hand quantity is at or below the reorder level.
             query = """
                 SELECT
                     si.inventory_id,
@@ -334,10 +349,12 @@ def get_low_stock(store_id=None):
             return cur.fetchall()
 
 
+# Evaluate vendor reliability and delivery performance against expected dates.
 def get_vendor_performance(store_id=None):
     with get_connection() as conn:
         with conn.cursor() as cur:
 
+            # Measure on-time vs late deliveries using conditional aggregates.
             query = """
                 SELECT
                     v.vendor_id,
@@ -389,9 +406,11 @@ def get_vendor_performance(store_id=None):
             return cur.fetchall()
 
 
+# Fetch the list of stores used by filters on the dashboard.
 def get_stores():
     with get_connection() as conn:
         with conn.cursor() as cur:
+            # Return stores sorted alphabetically for dropdown selection.
             cur.execute("""
                 SELECT
                     store_id,

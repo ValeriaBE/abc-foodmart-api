@@ -5,12 +5,16 @@ import pandas as pd
 import psycopg
 from dotenv import load_dotenv
 
+# Load environment variables so the database connection details can be read securely.
 load_dotenv()
 
+# Database connection string supplied via environment variables.
 DATABASE_URL = os.getenv("DATABASE_URL")
 
+# Folder containing the raw CSV files used to seed the database.
 DATA_FOLDER = Path(__file__).resolve().parents[2] / "data"
 
+# Ordered sequence of tables to load so foreign-key dependencies are satisfied.
 TABLES = [
     "store",
     "department",
@@ -32,6 +36,7 @@ TABLES = [
 ]
 
 
+# Columns that should be converted to plain dates before insert.
 DATE_COLUMNS = {
     "opening_date",
     "hire_date",
@@ -42,6 +47,7 @@ DATE_COLUMNS = {
     "expense_date",
 }
 
+# Columns that should retain a timestamp value.
 DATETIME_COLUMNS = {
     "last_updated",
     "adjustment_date",
@@ -49,6 +55,7 @@ DATETIME_COLUMNS = {
     "sale_datetime",
 }
 
+# Columns that should be stored as PostgreSQL booleans.
 BOOLEAN_COLUMNS = {
     "discontinued_status",
     "is_preferred",
@@ -56,6 +63,7 @@ BOOLEAN_COLUMNS = {
 
 
 def clean_dataframe(df):
+    # Normalize date, datetime, and boolean fields so the CSV data matches the database schema.
 
     for col in DATE_COLUMNS:
         if col in df.columns:
@@ -73,6 +81,7 @@ def clean_dataframe(df):
 
 
 def truncate_database(conn):
+    # Clear existing data before reloading to keep the database in a clean, repeatable state.
 
     with conn.cursor() as cur:
 
@@ -104,6 +113,7 @@ def truncate_database(conn):
 
 
 def insert_table(conn, table):
+    # Load one CSV file into its corresponding PostgreSQL table.
 
     csv = DATA_FOLDER / f"{table}.csv"
 
@@ -116,6 +126,7 @@ def insert_table(conn, table):
 
     print(f"Rows: {len(df)}")
 
+    # Convert values to the correct Python/Pandas types before bulk insert.
     df = clean_dataframe(df)
 
     columns = list(df.columns)
@@ -130,6 +141,7 @@ def insert_table(conn, table):
 
     values = [tuple(row) for row in df.itertuples(index=False, name=None)]
 
+    # Insert rows in bulk to speed up the load process.
     with conn.cursor() as cur:
 
         cur.executemany(sql, values)
@@ -140,11 +152,13 @@ def insert_table(conn, table):
 
 
 def main():
+    # Full seed process: clear tables, then insert each dataset in order.
 
     print("=" * 60)
     print("ABC FOODMART DATA LOADER")
     print("=" * 60)
 
+    # Connect to PostgreSQL using the environment-provided URL.
     conn = psycopg.connect(DATABASE_URL)
 
     truncate_database(conn)
