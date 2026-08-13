@@ -266,3 +266,27 @@ Backend deployed on:
 Database hosted on:
 
 - Render PostgreSQL
+
+# ABC Foodmart Sample Data
+
+This folder contains the generated datasets used to populate the PostgreSQL database for the ABC Foodmart Database Systems project.
+
+Files include:
+
+- customer.csv
+- delivery.csv
+- employee.csv
+- inventory_adjustment.csv
+- product.csv
+- product_category.csv
+- purchase_order.csv
+- purchase_order_item.csv
+- sale.csv
+- sale_item.csv
+- store.csv
+- store_expense.csv
+- store_inventory.csv
+- vendor.csv
+- vendor_product.csv
+
+These datasets were generated to simulate the daily operations of a multi-store grocery chain and support database design, ETL, and analytical reporting.
