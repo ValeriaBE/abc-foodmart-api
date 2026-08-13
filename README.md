@@ -209,20 +209,103 @@ Returns information about the connected PostgreSQL database.
 
 ## ETL Process
 
-The ETL pipeline imports generated CSV files into PostgreSQL.
+The project uses a three-stage data pipeline to prepare and populate the PostgreSQL database.
 
-Run
+### Stage 1 – Data Generation
+
+`app/scripts/generate_data.py`
+
+Since no operational dataset was provided, a Python script was developed to generate realistic grocery store data based on the ABC Foodmart business scenario.
+
+The script creates datasets for:
+
+- Stores
+- Departments
+- Product Categories
+- Vendors
+- Customers
+- Employees
+- Employee Schedules
+- Products
+- Store Inventory
+- Inventory Adjustments
+- Vendor Products
+- Purchase Orders
+- Purchase Order Items
+- Deliveries
+- Sales
+- Sale Items
+- Store Expenses
+
+The generated data is exported as CSV files to the `data/` directory.
+
+Run:
+
+```bash
+python app/scripts/generate_data.py
+```
+
+---
+
+### Stage 2 – Extract & Transform
+
+`etl/project_checkpoint4_group1.ipynb`
+
+The ETL notebook processes the generated data by:
+
+- Reading the source dataset
+- Cleaning and standardizing column names
+- Formatting dates and times
+- Handling missing values
+- Standardizing categorical values
+- Exporting cleaned CSV files
+- Generating an ETL summary
+
+---
+
+### Stage 3 – Load
+
+`app/scripts/load_data.py`
+
+The loading script imports the cleaned CSV files into PostgreSQL.
+
+Features include:
+
+- Loads tables in dependency order
+- Preserves primary and foreign key relationships
+- Commits data to PostgreSQL
+- Populates all 17 normalized tables
+
+Run:
 
 ```bash
 python app/scripts/load_data.py
 ```
 
-The loader:
+---
 
-- Clears existing data
-- Preserves foreign key relationships
-- Imports tables in dependency order
-- Populates all dashboard data
+## ETL Workflow
+
+```text
+Business Scenario
+        ↓
+generate_data.py
+        ↓
+Generated CSV Files
+        ↓
+ETL Notebook
+(Clean & Transform)
+        ↓
+Clean CSV Files
+        ↓
+load_data.py
+        ↓
+PostgreSQL Database
+        ↓
+FastAPI REST API
+        ↓
+React Dashboard
+```
 
 ---
 
